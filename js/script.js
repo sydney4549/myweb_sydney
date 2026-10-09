@@ -57,13 +57,13 @@ form.addEventListener('submit', function (event) {
 
 // ---------- 2. Photo gallery viewer ----------
 const photos = [
-  { src: 'images/photo1.jpg',
+  { src: 'images/Photo1.jpg',
     alt: 'Students studying together at a table in the computer lab',
     caption: 'Photo 1: Studying with classmates in the computer lab.' },
-  { src: 'images/photo2.jpg',
+  { src: 'images/Photo2.jpg',
     alt: 'A football being kicked on a green pitch at sunset',
     caption: 'Photo 2: Playing football, one of my favourite hobbies.' },
-  { src: 'images/photo3.jpg',
+  { src: 'images/Photo3.jpg',
     alt: 'A laptop on a desk showing lines of HTML code',
     caption: 'Photo 3: My desk where I practise coding every day.' }
 ];
