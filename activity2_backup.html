@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My First Web Page | SIAMPAKU SYDNEY | Mulungushi University</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Hello, I am SIAMPAKU SYDNEY</h1>
+    <p class="tagline">ICT with Education Student at Mulungushi University</p>
+  </header>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="#about">About Me</a>
+    <a href="#hobbies">My Hobbies</a>
+    <a href="#plan">My Learning Plan</a>
+    <a href="#photos">My Photos</a>
+    <a href="#media">My Media</a>
+    <a href="#contact">Contact</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development"
+       target="_blank" rel="noopener">MDN: Learn Web Development</a>
+  </nav>
+
+  <main>
+
+    <section id="about" class="content-section">
+      <h2>About Me</h2>
+      <p>
+        I am a student, studying the Bachelor of ICT with Education at Mulungushi University in Kabwe,
+        Zambia. I enjoy solving problems with code and I am learning how
+        websites are built from HTML and CSS. In my free time I like reading novels,
+        playing football and listening to music. This
+        website is my first complete project for ICT251, and I hope it shows
+        how much I have learned so far.
+      </p>
+    </section>
+
+    <section id="hobbies" class="content-section">
+      <h2>My Hobbies</h2>
+      <ul>
+        <li>I am a Footballer and a Chess player</li>
+        <li>Reading Novels</li>
+        <li>Listening Music</li>
+      </ul>
+    </section>
+
+    <section id="plan" class="content-section">
+      <h2>My Learning Plan</h2>
+
+      <h3>Steps to improve my web skills</h3>
+      <ol>
+        <li>Finish the HTML and CSS lessons and rebuild this page without
+            looking at my notes.</li>
+        <li>Build one small project every week, such as a recipe page or a
+            class timetable.</li>
+        <li>Learn Git and GitHub, then publish my projects online.</li>
+      </ol>
+
+      <h3>Weekly web learning timetable</h3>
+      <div class="table-wrap">
+        <table>
+          <caption>My weekly web learning plan</caption>
+          <thead>
+            <tr>
+              <th scope="col">Day</th>
+              <th scope="col">Topic</th>
+              <th scope="col">Practice task</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>Semantic HTML</td>
+              <td>Rebuild a page with header, nav, main and footer</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>CSS box model</td>
+              <td>Style cards using padding, margin and borders</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>Forms and media</td>
+              <td>Create a contact form and embed audio and video</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>Git and GitHub</td>
+              <td>Commit and push this project to a repository</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="photos" class="content-section">
+      <h2>My Photos</h2>
+      <h3>Photo gallery</h3>
+      <div class="gallery">
+        <figure>
+          <img src="images/photo1.jpg"
+               alt="Students studying together at a table in the computer lab">
+          <figcaption>Photo 1: Studying with classmates in the computer lab.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/photo2.jpg"
+               alt="A football being kicked on a green pitch at sunset">
+          <figcaption>Photo 2: Playing football, one of my favourite hobbies.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/photo3.jpg"
+               alt="A laptop on a desk showing lines of HTML code">
+          <figcaption>Photo 3: My desk where I practise coding every day.</figcaption>
+        </figure>
+      </div>
+      <p class="credit">Photo credit: all photos were taken by me, or by friends
+        who gave permission for them to be shown here.</p>
+    </section>
+
+    <section id="media" class="content-section">
+      <h2>My Media</h2>
+
+      <h3>Video: my self-introduction</h3>
+      <video controls preload="metadata">
+        <source src="videos/intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p>A short video where I introduce myself, my programme and the web skill
+        I hope to learn.</p>
+      <p class="summary"><strong>Written summary:</strong> My name is YOUR NAME and
+        I study Bachelor of ICT with Education at Mulungushi University. The web skill I most
+        want to learn is building responsive pages with HTML and CSS, so that
+        my websites work well on phones and computers.</p>
+
+      <h3>Audio: why I study web technologies</h3>
+      <audio controls preload="metadata">
+        <source src="videos/intro.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <p>In this clip I explain why I am studying web technologies and how I
+        hope to use these skills in my future career.</p>
+    </section>
+
+    <section id="contact" class="content-section">
+      <h2>Contact</h2>
+      <form action="#" method="get" class="contact-form">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" autocomplete="name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </div>
+        <div class="form-row">
+          <label for="topic">Topic</label>
+          <select id="topic" name="topic">
+            <option value="question">General question</option>
+            <option value="feedback">Feedback on my website</option>
+            <option value="collaboration">Study or project collaboration</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send message</button>
+      </form>
+      <p class="form-note"><strong>Note:</strong> this form is a browser demonstration
+        only. It does not send or store any data.</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 YOUR NAME | ICT251 Web Technologies | Mulungushi University</p>
+  </footer>
+
+</body>
+</html>

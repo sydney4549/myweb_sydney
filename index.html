@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio | SIAMPAKU SYDNEY | Mulungushi University</title>
+  <meta name="description" content="Student portfolio of Siampaku Sydney, Bachelor of ICT with Education at Mulungushi University.">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Hello, I am SIAMPAKU SYDNEY</h1>
+    <p class="tagline">Bachelor of ICT with Education student at Mulungushi University</p>
+    <p class="intro">I am learning to build websites with HTML, CSS and JavaScript. This portfolio shows who I am, what I have learned and the projects I am proud of.</p>
+    <a class="hero-btn" href="#projects">View My Projects</a>
+  </header>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="#about">About Me</a>
+    <a href="#hobbies">My Hobbies</a>
+    <a href="#plan">My Learning Plan</a>
+    <a href="#projects">Projects</a>
+    <a href="#photos">My Photos</a>
+    <a href="#media">My Media</a>
+    <a href="#contact">Contact</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development"
+       target="_blank" rel="noopener">MDN: Learn Web Development</a>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+  </nav>
+
+  <main>
+
+    <section id="about" class="content-section">
+      <h2>About Me</h2>
+      <p>
+        I am a student, studying the Bachelor of ICT with Education at Mulungushi University in Kabwe,
+        Zambia. I enjoy solving problems with code and I am learning how
+        websites are built from HTML and CSS. In my free time I like reading novels,
+        playing football and listening to music. This
+        website is my first complete project for ICT251, and I hope it shows
+        how much I have learned so far.
+      </p>
+    </section>
+
+    <section id="hobbies" class="content-section">
+      <h2>My Hobbies</h2>
+      <ul>
+        <li>I am a Footballer and a Chess player</li>
+        <li>Reading Novels</li>
+        <li>Listening Music</li>
+      </ul>
+    </section>
+
+    <section id="plan" class="content-section">
+      <h2>My Learning Plan</h2>
+
+      <h3>Steps to improve my web skills</h3>
+      <ol>
+        <li>Finish the HTML and CSS lessons and rebuild this page without
+            looking at my notes.</li>
+        <li>Build one small project every week, such as a recipe page or a
+            class timetable.</li>
+        <li>Learn Git and GitHub, then publish my projects online.</li>
+      </ol>
+
+      <h3>Weekly web learning timetable</h3>
+      <div class="table-wrap">
+        <table>
+          <caption>My weekly web learning plan</caption>
+          <thead>
+            <tr>
+              <th scope="col">Day</th>
+              <th scope="col">Topic</th>
+              <th scope="col">Practice task</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>Semantic HTML</td>
+              <td>Rebuild a page with header, nav, main and footer</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>CSS box model</td>
+              <td>Style cards using padding, margin and borders</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>Forms and media</td>
+              <td>Create a contact form and embed audio and video</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>Git and GitHub</td>
+              <td>Commit and push this project to a repository</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="projects" class="content-section">
+      <h2>Projects and Skills</h2>
+      <p>Three things I have learned and built. Search by a keyword such as "css" or "form", or open a card for more detail.</p>
+
+      <div class="filter-bar">
+        <label for="project-search">Search projects</label>
+        <input type="search" id="project-search" placeholder="e.g. html, css, form" autocomplete="off">
+        <button id="project-reset" class="btn-secondary" type="button">Reset</button>
+      </div>
+      <p id="project-status" class="status" role="status" aria-live="polite"></p>
+
+      <div id="project-grid" class="project-grid">
+        <article class="project-card" data-tags="html semantic structure accessibility header nav main footer">
+          <h3>Semantic HTML page</h3>
+          <p>I structured this portfolio with header, nav, main, section and footer so that it is clear for people and screen readers.</p>
+          <button class="btn-secondary expand-btn" type="button" aria-expanded="false" aria-controls="detail-1">Show details</button>
+          <p id="detail-1" class="detail" hidden>I learned why a page needs only one h1, how descriptive alt text helps visitors who cannot see the photos, and how labels connect to form fields.</p>
+        </article>
+        <article class="project-card" data-tags="css layout responsive grid flexbox box model media query">
+          <h3>Responsive layout with CSS</h3>
+          <p>I used the box model, CSS Grid and a media query so that the page works well on both phones and computers.</p>
+          <button class="btn-secondary expand-btn" type="button" aria-expanded="false" aria-controls="detail-2">Show details</button>
+          <p id="detail-2" class="detail" hidden>I practised padding, margins and borders on purpose, made images and videos flexible, and checked that nothing scrolls sideways at 375 px.</p>
+        </article>
+        <article class="project-card" data-tags="javascript form validation dom events interactive">
+          <h3>Interactive features with JavaScript</h3>
+          <p>I added form validation, a photo viewer, a project search and a light and dark theme switch.</p>
+          <button class="btn-secondary expand-btn" type="button" aria-expanded="false" aria-controls="detail-3">Show details</button>
+          <p id="detail-3" class="detail" hidden>I learned how to listen for events, change the page with the DOM, check user input and keep my logic in functions in js/script.js.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="photos" class="content-section">
+      <h2>My Photos</h2>
+      <h3>Photo gallery</h3>
+      <figure class="viewer">
+        <img id="gallery-img" src="images/photo1.jpg"
+             alt="Students studying together at a table in the computer lab">
+        <figcaption id="gallery-caption">Photo 1: Studying with classmates in the computer lab.</figcaption>
+      </figure>
+      <div class="viewer-controls">
+        <button id="gallery-prev" class="btn-secondary" type="button">Previous</button>
+        <span id="gallery-count" class="status" aria-live="polite">Photo 1 of 3</span>
+        <button id="gallery-next" class="btn-secondary" type="button">Next</button>
+      </div>
+      <p class="credit">Photo credit: all photos were taken by me, or by friends
+        who gave permission for them to be shown here.</p>
+    </section>
+
+    <section id="media" class="content-section">
+      <h2>My Media</h2>
+
+      <h3>Video: my self-introduction</h3>
+      <video controls preload="metadata">
+        <source src="videos/intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p>A short video where I introduce myself, my programme and the web skill
+        I hope to learn.</p>
+      <p class="summary"><strong>Written summary:</strong> My name is SIAMPAKU SYDNEY and
+        I study Bachelor of ICT with Education at Mulungushi University. The web skill I most
+        want to learn is building responsive pages with HTML and CSS, so that
+        my websites work well on phones and computers.</p>
+
+      <h3>Audio: why I study web technologies</h3>
+      <audio controls preload="metadata">
+        <source src="videos/intro.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <p>In this clip I explain why I am studying web technologies and how I
+        hope to use these skills in my future career.</p>
+    </section>
+
+    <section id="contact" class="content-section">
+      <h2>Contact</h2>
+      <p class="demo-label">Browser demonstration only — no message is sent.</p>
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-error">
+          <p id="name-error" class="error"></p>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-error">
+          <p id="email-error" class="error"></p>
+        </div>
+        <div class="form-row">
+          <label for="topic">Topic</label>
+          <select id="topic" name="topic">
+            <option value="question">General question</option>
+            <option value="feedback">Feedback on my website</option>
+            <option value="collaboration">Study or project collaboration</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required aria-describedby="message-error"></textarea>
+          <p id="message-error" class="error"></p>
+        </div>
+        <button type="submit">Check and preview</button>
+      </form>
+
+      <div id="preview" class="preview" hidden aria-live="polite">
+        <h3>Validated preview</h3>
+        <p>Your details were validated in the browser. Nothing was sent or stored.</p>
+        <dl>
+          <dt>Name</dt><dd id="out-name"></dd>
+          <dt>Email</dt><dd id="out-email"></dd>
+          <dt>Topic</dt><dd id="out-topic"></dd>
+          <dt>Message</dt><dd id="out-message"></dd>
+        </dl>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 SIAMPAKU SYDNEY | ICT251 Web Technologies | Mulungushi University</p>
+    <p><a href="https://github.com/sydney4549/myweb_Synexx" target="_blank" rel="noopener">View Source on GitHub</a></p>
+  </footer>
+
+</body>
+</html>
